@@ -1100,7 +1100,7 @@ const Goodreads = function(credentials, callbackURL) {
    * @access public
    * @param {string} seriesID series ID
    * @returns {promise} returns Info on a series
-   * 
+   *
    */
   function getSeries(seriesID) {
     if (!seriesID) return Promise.reject(wrongParamsError('getSeries()', 'seriesID'));
@@ -1115,7 +1115,7 @@ const Goodreads = function(credentials, callbackURL) {
       .withPath(path)
       .withQueryParams(options)
       .build();
-    
+
     return _execute(get, req);
   };
 
@@ -1164,6 +1164,8 @@ const Goodreads = function(credentials, callbackURL) {
     getRequestToken,
     getAccessToken,
     _setOAuthToken,
+    _setAccessToken,
+    _execute,
     getBooksByAuthor,
     getAuthorInfo,
     getAllSeriesByAuthor,
