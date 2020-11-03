@@ -317,6 +317,7 @@ var goodreadsApi = createCommonjsModule(function (module, exports) {
       var encryption = 'HMAC-SHA1';
 
       OAUTH = new OAuth(requestURL, accessURL, KEY, SECRET, version, callbackURL, encryption);
+      return OAUTH;
     }
     /**
      * getRequestToken

@@ -105,6 +105,7 @@ const Goodreads = function(credentials, callbackURL) {
     const encryption = 'HMAC-SHA1';
 
     OAUTH = new OAuth(requestURL, accessURL, KEY, SECRET, version, callbackURL, encryption);
+    return OAUTH;
   };
 
   /**
