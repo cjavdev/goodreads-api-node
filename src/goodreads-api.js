@@ -84,6 +84,10 @@ const Goodreads = function(credentials, callbackURL) {
       .then(res => responseKey ? res.GoodreadsResponse[responseKey] : res.GoodreadsResponse)
   };
 
+  function _setOAuth(oauth) {
+    OAUTH = oauth;
+  }
+
   /**
    * initOAuth
    *
@@ -1166,6 +1170,7 @@ const Goodreads = function(credentials, callbackURL) {
     _setOAuthToken,
     _setAccessToken,
     _execute,
+    _setOAuth,
     getBooksByAuthor,
     getAuthorInfo,
     getAllSeriesByAuthor,

@@ -296,6 +296,10 @@ var goodreadsApi = createCommonjsModule(function (module, exports) {
         return responseKey ? res.GoodreadsResponse[responseKey] : res.GoodreadsResponse;
       });
     }
+    function _setOAuth(oauth$$1) {
+      OAUTH = oauth$$1;
+    }
+
     /**
      * initOAuth
      *
@@ -894,6 +898,7 @@ var goodreadsApi = createCommonjsModule(function (module, exports) {
       _setOAuthToken: _setOAuthToken,
       _setAccessToken: _setAccessToken,
       _execute: _execute,
+      _setOAuth: _setOAuth,
       getBooksByAuthor: getBooksByAuthor,
       getAuthorInfo: getAuthorInfo,
       getAllSeriesByAuthor: getAllSeriesByAuthor,
