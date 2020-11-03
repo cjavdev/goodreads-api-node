@@ -304,6 +304,7 @@
 	    }
 	    function _setOAuth(oauth$$1) {
 	      OAUTH = oauth$$1;
+	      OAUTHENTICATED = true;
 	    }
 
 	    /**

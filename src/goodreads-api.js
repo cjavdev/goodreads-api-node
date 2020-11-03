@@ -86,6 +86,7 @@ const Goodreads = function(credentials, callbackURL) {
 
   function _setOAuth(oauth) {
     OAUTH = oauth;
+    OAUTHENTICATED = true;
   }
 
   /**
